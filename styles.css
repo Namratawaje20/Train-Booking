@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    cursor: pointer;
 }
-
 
 header {
     background-color: #003366;
@@ -53,7 +53,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-
 .banner {
     position: relative;
     overflow: hidden;
@@ -95,7 +94,6 @@ nav ul li a:hover {
     transition: color 0.3s;
 }
 
-
 .banner-content:hover h2 {
     color: #ffcc00;
     transform: translateY(-10px);
@@ -104,7 +102,6 @@ nav ul li a:hover {
 .banner-content:hover p {
     color: #cccccc;
 }
-
 
 .enquiry-section {
     padding: 40px 20px;
@@ -125,6 +122,12 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 5px;
     width: 300px;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enquiry-box:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 h3 {
@@ -159,18 +162,19 @@ textarea {
 button {
     padding: 10px 15px;
     border: none;
-    background-color: #003366;
+    background: linear-gradient(135deg, #003366, #0055aa);
     color: #ffffff;
     font-size: 16px;
-    border-radius: 3px;
+    border-radius: 20px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #0055aa;
+    background: linear-gradient(135deg, #0055aa, #0077cc);
+    box-shadow: 0px 4px 8px rgba(0, 85, 170, 0.4);
 }
-
 
 .contact-section {
     padding: 40px 20px;
@@ -187,7 +191,6 @@ textarea {
     resize: vertical;
 }
 
-
 footer {
     background-color: #003366;
     color: #ffffff;
@@ -200,7 +203,6 @@ footer p {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
-
 
 @media (max-width: 768px) {
     .header-container {
@@ -264,14 +266,11 @@ footer p {
 .dm-serif-text-regular {
     font-family: "DM Serif Text", serif;
     font-weight: 600;
- 
     font-style: normal;
-  }
-  
-  .dm-serif-text-regular-italic {
+}
+
+.dm-serif-text-regular-italic {
     font-family: "DM Serif Text", serif;
     font-weight: 600;
-    
     font-style: italic;
-  }
-  
+}
